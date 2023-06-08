@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. SOLID", "1. SOLID", "{2148159A-C80A-457E-B258-D30DB36720B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Design Patterns", "2. Design Patterns", "{819EEC2F-958C-4409-A5B5-F203D5D06C8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Single Responsibility Principle", "1. Single Responsibility Principle", "{6079AE83-3F1A-4081-A954-4882ECF770A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Open Close Principle", "2. Open Close Principle", "{CB650942-3D54-4BEC-A096-8E1DD2F9FC06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Liskov Substitution Principle", "3. Liskov Substitution Principle", "{294A964B-E148-447F-832A-5C80923C433D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Interface Segregation Principle", "4. Interface Segregation Principle", "{6FD54338-CA08-48FA-9389-4E8557850202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Dependency Inversion Principle", "5. Dependency Inversion Principle", "{0D6F83B3-097E-498B-ADCB-3252C21525E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Creational", "1. Creational", "{332C86D4-D167-489D-851F-CC3F08AE739D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Behavioral", "2. Behavioral", "{F196E099-CA04-4353-8D69-6AA10BB1FA0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Structural", "3. Structural", "{12E56812-06A2-42B8-B166-2690945F9548}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6079AE83-3F1A-4081-A954-4882ECF770A3} = {2148159A-C80A-457E-B258-D30DB36720B4}
+		{CB650942-3D54-4BEC-A096-8E1DD2F9FC06} = {2148159A-C80A-457E-B258-D30DB36720B4}
+		{294A964B-E148-447F-832A-5C80923C433D} = {2148159A-C80A-457E-B258-D30DB36720B4}
+		{6FD54338-CA08-48FA-9389-4E8557850202} = {2148159A-C80A-457E-B258-D30DB36720B4}
+		{0D6F83B3-097E-498B-ADCB-3252C21525E3} = {2148159A-C80A-457E-B258-D30DB36720B4}
+		{332C86D4-D167-489D-851F-CC3F08AE739D} = {819EEC2F-958C-4409-A5B5-F203D5D06C8A}
+		{F196E099-CA04-4353-8D69-6AA10BB1FA0A} = {819EEC2F-958C-4409-A5B5-F203D5D06C8A}
+		{12E56812-06A2-42B8-B166-2690945F9548} = {819EEC2F-958C-4409-A5B5-F203D5D06C8A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}
+	EndGlobalSection
+EndGlobal
