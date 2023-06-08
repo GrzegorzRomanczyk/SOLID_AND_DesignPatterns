@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Ogólne informacje o zestawie są kontrolowane poprzez następujący 
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
-[assembly: AssemblyTitle("SOLID_AND_DesignPatterns")]
+[assembly: AssemblyTitle("Invoice_Example")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SOLID_AND_DesignPatterns")]
+[assembly: AssemblyProduct("Invoice_Example")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Następujący identyfikator GUID jest identyfikatorem biblioteki typów w przypadku udostępnienia tego projektu w modelu COM
-[assembly: Guid("6391bbc3-6706-4086-9496-80af9b76bcc8")]
+[assembly: Guid("0c463a9f-2d62-485b-b101-31ac8280056b")]
 
 // Informacje o wersji zestawu zawierają następujące cztery wartości:
 //

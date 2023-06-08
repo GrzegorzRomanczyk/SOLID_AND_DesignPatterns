@@ -23,7 +23,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Behavioral", "2. Behavio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Structural", "3. Structural", "{12E56812-06A2-42B8-B166-2690945F9548}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{63FB360B-86CC-4AA7-A262-81E46D513F9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice_Example", "Invoice_Example\Invoice_Example.csproj", "{0C463A9F-2D62-485B-B101-31AC8280056B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Invoice", "1. Invoice", "{77A89C6F-62A8-4235-AC66-496FBAC63845}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C463A9F-2D62-485B-B101-31AC8280056B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C463A9F-2D62-485B-B101-31AC8280056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C463A9F-2D62-485B-B101-31AC8280056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C463A9F-2D62-485B-B101-31AC8280056B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -36,6 +52,9 @@ Global
 		{332C86D4-D167-489D-851F-CC3F08AE739D} = {819EEC2F-958C-4409-A5B5-F203D5D06C8A}
 		{F196E099-CA04-4353-8D69-6AA10BB1FA0A} = {819EEC2F-958C-4409-A5B5-F203D5D06C8A}
 		{12E56812-06A2-42B8-B166-2690945F9548} = {819EEC2F-958C-4409-A5B5-F203D5D06C8A}
+		{63FB360B-86CC-4AA7-A262-81E46D513F9D} = {6079AE83-3F1A-4081-A954-4882ECF770A3}
+		{0C463A9F-2D62-485B-B101-31AC8280056B} = {77A89C6F-62A8-4235-AC66-496FBAC63845}
+		{77A89C6F-62A8-4235-AC66-496FBAC63845} = {63FB360B-86CC-4AA7-A262-81E46D513F9D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}

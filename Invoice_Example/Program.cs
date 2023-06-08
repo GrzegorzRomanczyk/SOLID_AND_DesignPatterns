@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID_AND_DesignPatterns
+namespace Invoice_Example
 {
     class Program
     {
