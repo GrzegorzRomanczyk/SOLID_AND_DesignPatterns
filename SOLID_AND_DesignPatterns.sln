@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. SOLID", "1. SOLID", "{2148159A-C80A-457E-B258-D30DB36720B4}"
+	ProjectSection(SolutionItems) = preProject
+		Teoria.txt = Teoria.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Design Patterns", "2. Design Patterns", "{819EEC2F-958C-4409-A5B5-F203D5D06C8A}"
 EndProject
