@@ -1,0 +1,12 @@
+Mamy aplikacje do wystawiania faktur. 
+Program ma jedna odpowiedzialnosc:
+- agregacje danych o fakturze.
+
+Dosz³y nowe wymagania:
+- wyœwietlanie faktury,
+- zapis faktury do pliku.
+
+Nowe funkcjonalnosci zosta³y dodane do klasy Invoice, przez co zosta³a zlamana zasada SRP.
+
+Rozwiazanie
+Nale¿y rozdzieliæ odpowiedzialnosc tzn przeniesc metody Display() oraz SaveToPdf() do odrebnych klas (np InvoiceLogger oraz InvoicePersistance)

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Invoice_Bad
+namespace Invoice_Good
 {
     internal class Program
     {
@@ -26,8 +26,12 @@ namespace Invoice_Bad
             };
 
             Invoice invoice = new Invoice(items, "Ihor", "Grzesiek");
-            invoice.Display();
-            invoice.SaveToPdf();
+
+            InvoiceLogger logger = new InvoiceLogger(invoice);
+            logger.Display();
+
+            InvoicePersistance persistance = new InvoicePersistance(invoice);
+            persistance.SaveToPdf();
 
             Console.ReadKey();
         }
