@@ -1,0 +1,11 @@
+G³ówna klasa programu  posiada 4 odpowiedzialnosci
+- wyswietlanie standardowych wiadomosci
+- pobieranie danych od uzytkownika
+- sprawdzanie czy podane dane sa prawidlowe
+- generowanie uzytkownika
+Istnieja 4 powody do zmiany
+
+Rozwiazanie
+Refaktoryzacja klasy Program rozbijajac odpowiedzialnosci na mniejsze klasy.
+Metody celowo sa statyczne aby skupic sie na SRP
+Wiadomosci zwiazane z rozpoczaciem programu, zakonczeniem oraz bledem validacji zostaly uznane za jedna odpowiedzialnosc
