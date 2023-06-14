@@ -27,18 +27,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{63FB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Invoice", "1. Invoice", "{77A89C6F-62A8-4235-AC66-496FBAC63845}"
 	ProjectSection(SolutionItems) = preProject
-		Problem.txt = Problem.txt
+		1. SOLID\1. Single Responsibility Principle\Example\1. Invoice\Problem.txt = 1. SOLID\1. Single Responsibility Principle\Example\1. Invoice\Problem.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bad", "Bad", "{F28582AC-D6BC-4106-A292-3F770F2215B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Good", "Good", "{CF3D1957-6601-4EA9-B20C-393B08F95A5D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.", "2.", "{E141A0EC-14BD-4DF2-B7F7-B64DAE22356D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice_Good", "1. SOLID\1. Single Responsibility Principle\Example\1. Invoice\Invoice_Good\Invoice_Good.csproj", "{0270B00B-15C3-48D0-9DE1-8620099131AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice_Bad", "1. SOLID\1. Single Responsibility Principle\Example\1. Invoice\Invoice_Bad\Invoice_Bad.csproj", "{0C463A9F-2D62-485B-B101-31AC8280056B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Email Sender", "2. Email Sender", "{D9181283-DCB1-4793-ADBF-ED275F05BA42}"
+	ProjectSection(SolutionItems) = preProject
+		1. SOLID\1. Single Responsibility Principle\Example\2. Email Sender\Problem.txt = 1. SOLID\1. Single Responsibility Principle\Example\2. Email Sender\Problem.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender_Bad", "1. SOLID\1. Single Responsibility Principle\Example\2. Email Sender\Bad\EmailSender_Bad\EmailSender_Bad.csproj", "{B31E7E58-07CA-44AD-B4F8-30E50D96E8AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bad", "Bad", "{0CFDED99-8FBA-4F9F-B532-8F7BB6A1ECE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Good", "Good", "{75B20FE0-1446-4277-95AA-313E5521C078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender_Good", "1. SOLID\1. Single Responsibility Principle\Example\2. Email Sender\Good\EmailSender_Good\EmailSender_Good.csproj", "{7A19B6F0-B8C1-44B5-A6A5-88F1D91CF06F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +65,14 @@ Global
 		{0C463A9F-2D62-485B-B101-31AC8280056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C463A9F-2D62-485B-B101-31AC8280056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C463A9F-2D62-485B-B101-31AC8280056B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31E7E58-07CA-44AD-B4F8-30E50D96E8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31E7E58-07CA-44AD-B4F8-30E50D96E8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31E7E58-07CA-44AD-B4F8-30E50D96E8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31E7E58-07CA-44AD-B4F8-30E50D96E8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A19B6F0-B8C1-44B5-A6A5-88F1D91CF06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A19B6F0-B8C1-44B5-A6A5-88F1D91CF06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A19B6F0-B8C1-44B5-A6A5-88F1D91CF06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A19B6F0-B8C1-44B5-A6A5-88F1D91CF06F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,9 +90,13 @@ Global
 		{77A89C6F-62A8-4235-AC66-496FBAC63845} = {63FB360B-86CC-4AA7-A262-81E46D513F9D}
 		{F28582AC-D6BC-4106-A292-3F770F2215B1} = {77A89C6F-62A8-4235-AC66-496FBAC63845}
 		{CF3D1957-6601-4EA9-B20C-393B08F95A5D} = {77A89C6F-62A8-4235-AC66-496FBAC63845}
-		{E141A0EC-14BD-4DF2-B7F7-B64DAE22356D} = {63FB360B-86CC-4AA7-A262-81E46D513F9D}
 		{0270B00B-15C3-48D0-9DE1-8620099131AC} = {CF3D1957-6601-4EA9-B20C-393B08F95A5D}
 		{0C463A9F-2D62-485B-B101-31AC8280056B} = {F28582AC-D6BC-4106-A292-3F770F2215B1}
+		{D9181283-DCB1-4793-ADBF-ED275F05BA42} = {63FB360B-86CC-4AA7-A262-81E46D513F9D}
+		{B31E7E58-07CA-44AD-B4F8-30E50D96E8AD} = {0CFDED99-8FBA-4F9F-B532-8F7BB6A1ECE6}
+		{0CFDED99-8FBA-4F9F-B532-8F7BB6A1ECE6} = {D9181283-DCB1-4793-ADBF-ED275F05BA42}
+		{75B20FE0-1446-4277-95AA-313E5521C078} = {D9181283-DCB1-4793-ADBF-ED275F05BA42}
+		{7A19B6F0-B8C1-44B5-A6A5-88F1D91CF06F} = {75B20FE0-1446-4277-95AA-313E5521C078}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}

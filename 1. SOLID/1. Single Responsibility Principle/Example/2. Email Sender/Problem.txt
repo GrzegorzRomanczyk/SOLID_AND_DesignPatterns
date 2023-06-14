@@ -1,0 +1,11 @@
+Klasa EmailSender posiada wiecej niz jedna odpowiedzialnosc dlatego istnieje wiecej
+niz jeden powod aby ta klase zmienic.
+Klasa odpowiada za
+- wysylanie emaili
+- dodawanie informacji do statystyk
+- logowanie informacji o bledach
+Klasa posiada 3 odpowiedzialnosci wiec zasada SRP jest zlamana
+
+Rozwiazanie
+Nalezy rozdzielic klase EmailSender na trzy klasy, kazda nowa klasa przejmie jedna odpowiedzialnosc.
+Nalezy takze rozbic interface IEmailSender
