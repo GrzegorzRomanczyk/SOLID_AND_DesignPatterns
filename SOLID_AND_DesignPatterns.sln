@@ -65,6 +65,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonGenerator_Good", "1. SOLID\1. Single Responsibility Principle\Example\3. Person Generator\Good\PersonGenerator_Good\PersonGenerator_Good.csproj", "{AEDB1407-0F90-41E3-864B-696C558FE959}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{69EA9E03-B176-4566-8FE3-A7975FD5E605}"
+	ProjectSection(SolutionItems) = preProject
+		Definicja.txt = Definicja.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{E0256B2A-82B0-41F5-A7CD-44ED680FAA20}"
 EndProject
