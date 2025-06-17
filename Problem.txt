@@ -1,0 +1,26 @@
+BaseCode
+Mamy aplikacje DuckSimulator. Wszystkie obecnie zaimplementowane kaczki (krzy¿ówka oraz plaskonos) kwacza, plywaja oraz potrafia wyswietlic jakim typem sa.
+
+DuckSimulator_Bad
+Wymaganie 1 - Do aplikacji doszlo nowe wymaganie. Kaczki musza latac. Metoda Fly() zostala dodana do klasy bazowej Duck.
+Wymaganie 2 - Doszlo kolejne wymaganie mainowicie dodanie gumowej kaczki. Problem polega na tym, ze gumowa kaczka nie KWACZE ani nie LATA. W celu poprawienia tego przeslaniamy metody
+			  Quack() oraz Fly(). Rozwiazanie Dziala, ale nie jest idealne poniewaz za kazdym razem jak dodamy cos nowego (zachowanie, typ kaczki) narazamy sie na modyfikacje kodu.
+Wady dziedziczenia z klasy Duck()
+	- kod jest powielany w klasach podrzednych
+	- wprowadzanie zmian w zachowaniu programu jest trudne
+	- trudno zebrac informacje o zachowaniu innych kaczek
+	- wprowadzone zmiany moga miec niezamierzony wplyw na inne kaczki
+
+DuckSimulator_Bad_2
+Wymaganie 1 - Do aplikacji doszlo wymaganie dodania kaczki wabik. Taka kaczka ani nie lata, ani nie wydaje z siebie dzwieku. Przeslanianie metod staje sie problematyczne z kazdym 
+nowym wymaganiem
+
+Rozwiazanie - z klasy bazowej Duck przenosimy metody Quack() oraz Fly() do oddzielnych interfacow. Pozwala nam to w klasie bazowej przechowywac metody, ktore uzywaja wszystkie kaczki,
+			  a zachowania takie jak latanie oraz oraz kwakanie przypisac tym kaczkom, ktore faktycznie tego potrzebuja
+Wady tego rozwiazania - wszystko pieknie dziala. Kaczki potrafia wykonac zachowania do ktorych zostaly stworzone. Problem jednak polega na tym, ze kazda kaczka potrzebuje osobnej 
+						implementacji metod. Wyobrazmy sobie, ze mamy 50 kaczek latajacych.. Kazda z nich musi dostarczac implementacje metody Fly(). Tak mozna zrobic kolejna klase bazowa
+						dla kaczek latajacych dziedziczacych po klasie Duck zeby byla jedna implementacja, ale co w przypadku kiedy dodamy np predkosc plywania? Znowu trzeba bedzie 
+						nadpisywac metody w klasach dziedziczacych.
+
+DuckSimulator_Good
+Wzorzec strategia
