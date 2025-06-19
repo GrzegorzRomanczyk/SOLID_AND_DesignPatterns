@@ -10,7 +10,6 @@ namespace DuckSimulator_Bad_2
     {
         static void Main(string[] args)
         {
-
             var mallardDuck = new Mallard();
             mallardDuck.Display();
             mallardDuck.Quack();

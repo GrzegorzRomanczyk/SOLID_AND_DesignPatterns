@@ -1,5 +1,5 @@
 BaseCode
-Mamy aplikacje DuckSimulator. Wszystkie obecnie zaimplementowane kaczki (krzy¿ówka oraz plaskonos) kwacza, plywaja oraz potrafia wyswietlic jakim typem sa.
+Mamy aplikacje DuckSimulator. Wszystkie obecnie zaimplementowane kaczki (krzyÅ¼Ã³wka oraz plaskonos) kwacza, plywaja oraz potrafia wyswietlic jakim typem sa.
 
 DuckSimulator_Bad
 Wymaganie 1 - Do aplikacji doszlo nowe wymaganie. Kaczki musza latac. Metoda Fly() zostala dodana do klasy bazowej Duck.
@@ -22,5 +22,14 @@ Wady tego rozwiazania - wszystko pieknie dziala. Kaczki potrafia wykonac zachowa
 						dla kaczek latajacych dziedziczacych po klasie Duck zeby byla jedna implementacja, ale co w przypadku kiedy dodamy np predkosc plywania? Znowu trzeba bedzie 
 						nadpisywac metody w klasach dziedziczacych.
 
-DuckSimulator_Good
-Wzorzec strategia
+DuckSimulator_Good_Strategy
+Wzorzec strategia - wykorzystujac wzorzec strategia oddzielimy rzeczy stale od tych co sie zmieniaja.
+1- wydzielamy interface IFlying. Dodajemy klasy implementujace mozliwe zachowania latania - FlyOnWings oraz CantFly.
+2 - wydzielamy interface IQuacking . Dodajemy klasy implementujace zachowanie wydawanych dzwiekow przez kaczki - Quacking, Squeaks, CantQuack
+3 - w klasie kaczka wstrzykujemy interface zachowan IFlying oraz IQuacking. Dodalismy dwie metody wrapujace wywolanie zachowan wstrzyknietych serwisow - ExecuteFly() oraz ExecuteQuack()
+4 - nastepnie przekazujemy odpowiednie klasy zachowan do kazdego rodzaju kaczki aby moglo je przekazac do klasy bazowej
+
+DuckSim_Good_Strategy_Dynamic - nazwa skrocona bo VS podpowiadal ze jest za dluga i nie bedzie sie dalo zagniezdzac plikow
+Doszlo wymaganie aby kaczki mogly zmieniac swoje zachowania, np zmiana sposobu latania na silnik rakietowy
+1 - implementujemy metody pozwalajace przypisac nowe zachowania SetFlying() oraz SetQuacking();
+2 - dodajemy nowa klase FlyRocketEngine, ktora implementuje interface IFlying

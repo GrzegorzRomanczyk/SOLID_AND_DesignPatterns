@@ -66,14 +66,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonGenerator_Good", "1. 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{69EA9E03-B176-4566-8FE3-A7975FD5E605}"
 	ProjectSection(SolutionItems) = preProject
-		Definicja.txt = Definicja.txt
+		2. Design Patterns\2. Behavioral\Strategy\Definicja.txt = 2. Design Patterns\2. Behavioral\Strategy\Definicja.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{E0256B2A-82B0-41F5-A7CD-44ED680FAA20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Duck Simulator", "1. Duck Simulator", "{B8BC3DF8-FC81-4E60-8C06-E764B01C6122}"
 	ProjectSection(SolutionItems) = preProject
-		Problem.txt = Problem.txt
+		2. Design Patterns\2. Behavioral\Strategy\Example\1. Duck Simulator\Problem.txt = 2. Design Patterns\2. Behavioral\Strategy\Example\1. Duck Simulator\Problem.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bad", "Bad", "{F7552249-3760-449B-9730-B8B83D144049}"
@@ -87,6 +87,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSimulator_Bad", "2. Design Patterns\2. Behavioral\Strategy\Example\1. Duck Simulator\Bad\DuckSimulator_Bad\DuckSimulator_Bad.csproj", "{C0EE654D-6113-4C2E-A86F-F3FA6BE4FD2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSimulator_Bad_2", "2. Design Patterns\2. Behavioral\Strategy\Example\1. Duck Simulator\Bad\DuckSimulator_Bad_2\DuckSimulator_Bad_2.csproj", "{0C0CAEEC-98A4-44E8-8530-6CE47537F930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSimulator_Good_Strategy", "2. Design Patterns\2. Behavioral\Strategy\Example\1. Duck Simulator\Good\DuckSimulator_Good_Strategy\DuckSimulator_Good_Strategy.csproj", "{3DFF0CCB-4FC6-415B-9D5C-CC870E9CB805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSim_Good_Strategy_Dynamic", "2. Design Patterns\2. Behavioral\Strategy\Example\1. Duck Simulator\Good\DuckSim_Good_Strategy_Dynamic\DuckSim_Good_Strategy_Dynamic.csproj", "{B67A43B3-769B-4220-A1F6-FB3987416B8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +134,14 @@ Global
 		{0C0CAEEC-98A4-44E8-8530-6CE47537F930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C0CAEEC-98A4-44E8-8530-6CE47537F930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C0CAEEC-98A4-44E8-8530-6CE47537F930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DFF0CCB-4FC6-415B-9D5C-CC870E9CB805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFF0CCB-4FC6-415B-9D5C-CC870E9CB805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFF0CCB-4FC6-415B-9D5C-CC870E9CB805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFF0CCB-4FC6-415B-9D5C-CC870E9CB805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67A43B3-769B-4220-A1F6-FB3987416B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67A43B3-769B-4220-A1F6-FB3987416B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67A43B3-769B-4220-A1F6-FB3987416B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67A43B3-769B-4220-A1F6-FB3987416B8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +180,8 @@ Global
 		{FD8D38E1-B29D-484D-91FC-81F44C6805BE} = {0D668CD6-C34F-429C-BC77-4C4806DF1DCA}
 		{C0EE654D-6113-4C2E-A86F-F3FA6BE4FD2D} = {F7552249-3760-449B-9730-B8B83D144049}
 		{0C0CAEEC-98A4-44E8-8530-6CE47537F930} = {F7552249-3760-449B-9730-B8B83D144049}
+		{3DFF0CCB-4FC6-415B-9D5C-CC870E9CB805} = {322FB390-5EDD-4445-BAB2-5F1CE140F841}
+		{B67A43B3-769B-4220-A1F6-FB3987416B8A} = {322FB390-5EDD-4445-BAB2-5F1CE140F841}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}
