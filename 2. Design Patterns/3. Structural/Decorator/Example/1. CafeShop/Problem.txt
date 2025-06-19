@@ -1,0 +1,23 @@
+CafeShop_BaseCode
+Mamy aplikacje do zamawiania kawy. Na ta chwile mamy do wyboru kawe mocno palona, bezkofeinowa oraz espresso.
+
+CafeShop_Bad
+Wymaganie 1 - doszlo wymaganie aby do kawy mozna bylo wybrac tez dodatek np mleko, mleko sojowe, bita smietane itd. Za kazdy dodatek doliczana jest oplata.
+Do tego rozwiazania uzyjemy zmiennych instancyjnych oraz dziedziczenia.
+1 - do klasy Drink dodajemy zmienne bool dla wszystkich mozliwych dodatkow
+2 - dodajemy metody, ktore umozliwiaja dodanie dodatku oraz pobranie ceny kazdego z nich
+3 - zmieniamy abstrakcyjna metode GetCost() aby byla w stanie wyliczyc kwote wybranych dodatkow
+4 - w klasach dziedziczacych uzywamy bazowej metody GetCost() i dodajemy ja do ceny standardowej kawy
+Potencjalne problemy - to zmiany, np cen dodatkow, dodanie nowych dodatkow wymusza dodanie nowych metod w klasie bazowej, 
+					   moze pojawic sie nowy napoj np herbata do ktorej juz nie dodamy ktoregos z dodatkow, w chwili obecnej tez nie jestesmy w stanie zaserwowac podwojnej czekolady.
+
+CafeShop_Good_Decorator
+Aktualnie progam jest trudny w rozbudowie i i ³amie druga zasade solida otwarty-zamkniety. Zrefaktoryzujemy go do wzorca Decorator
+1 - tworzymy klase abstrakcyjna IngredientDecorator, ktora dziedziczy po klasie Drink
+2 - tworzymy klasy dodatkow, ktore dziedzicza po IngredientDecorator
+3 - zmieniamy klase bazowa Drink na taka sama jak w CafeShop_BaseCode czyli tylko virtual GetDescription() oraz abstract GetCost()
+4 - w klasie IngredientDecorator dodajemy do konstruktora typ bazowy Drink oraz przypisujemy do pola protected aby reszta klas dziedziczacych miala dostep
+5 - zmieniamy klasy napojow usuwajac z nich wywolanie bazowej metody GetCost()
+6 - w klasach dodatkow wstrzykujemy klase Drink, ktora przekazujemy do klasy bazowej IngredientDecorator
+7 - w klasach dodatkow implementujemy metody GetDescription() oraz GetCost() w sposob taki, ze wywolujemy zachwanie napoju i do niego dokladamy dodatkowe opisy, wartosci
+8 - poprawiamy klase Program aby uzywala decoratorow

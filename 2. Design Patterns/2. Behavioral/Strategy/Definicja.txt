@@ -1,0 +1,2 @@
+Wzorzec strategia - definiuje rodzine algorytmow, hermetyzuje je jako osobne klasy i sprawia ze sa one w pelni wymienne.
+					Zastosowanie tego wzorca pozwala na to, aby zmiany w implementacji tych algorytmow byly calkowicie niezalezne od klientow, ktore ich uzywaja 
