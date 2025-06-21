@@ -1,0 +1,17 @@
+1. Simple factory - nie jest pelnoprawnym wzorcem projektowym, ale jest czesto spotykany dlatego jest honorowym czlonkiem lozy wzorcow projektowych
+2. Metoda typu fabryka, metoda wytworcza, factory method - definiuje interfejs pozwalajacy na tworzenie obiektow, ale pozwala klasom podrzednym decydowac jakiej klasy obiekty
+														   zostana utworzone. Wzorzec Metoda Wytworcza przekazuje odpowiedzialnosc za tworzenie obiektow do klas podrzednych
+					   - obsluguje tworzenie obiektu i hermetyzuje ten proces w klasie podrzednej. takie rozwiazanie powoduje usuniecie sprzezenia pomiedzy kodem
+						 klienta w klasie nadrzednej a kodem w odpowiedzialnym za tworzenie obiektow, zlokalizowanym w klasie podrzednej
+					   - jest metoda abstrakcyjna dzieki czemu za obsluge tworzenia obiektow odpowiedzialne sa klasy podrzedne
+					   - zwraca klase ktora jest zazwyczaj wykorzystywana przez metody zdefiniowane w klasie nadrzednej
+					   - moze przyjmowac parametr co pozwala dokonac wyboru odpowiedniego obiektu
+					   - powoduje ze kod klienta (kod zlokalizowany w klasie nadrzednej) nie wie jaki rodzaj klasy jest aktualnie tworzony
+
+Wszystkie wzorce Factory wykorzystuja hermetyzacje tworzenia obiektu. 
+- Wzorzec metoda wytworcza hermetyzuje ten proces poprzez pozwolenie klasom podrzednym na decydowanie jaki obiekt zostanie utworzony
+
+3. Abstract factory - dostarcza interfejs do tworzenia calych rodzin powiazanych ze soba lub zaleznych od siebie obiektow bez koniecznosci okreslania klas rzeczywistych
+
+Roznica miedzy metoda wytworcza a fabryka abstrakcyjna -  MW tworzy jeden produkt, oddziela kod klienta od klas rzeczywistych tworzonych obiektow. Wykorzystuje dziedziczenie
+														  FA tworzy rodziny produktow zapewnia spojne wytworzenie rodzin produktow. Czesto wykorzystuje MW oraz kompozycje obiektow

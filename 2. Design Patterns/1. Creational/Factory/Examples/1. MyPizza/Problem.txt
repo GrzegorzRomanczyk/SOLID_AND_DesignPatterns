@@ -1,0 +1,35 @@
+MyPizza_BaseCode
+Mamy aplikacje do wytwarzania zamowionej pizzy. Mamy pizze serowa, grecka oraz pepperoni. Mamy tez serwis ktory odpowiada za wybranie odpowiedniej pizzy 
+i wywolanie metod niezbednych do jej przygotowania 
+
+MyPizza_Bad
+Doszlo wymaganie aby usunac pizze ktora sie nie sprzedaje czyli pizza grecka oraz dodac popularnie trendujace pizze takie jak wegetarianska oraz z owocami morza.
+Rozwiazanie - w klasie PizzaService usuwamy ifa odpowiadajacego pizzy greckiej oraz dodajemy dwa nowe odpowiadajace pizzy wege oraz z owocami morza.
+Wady - kod nie jest zamkniety na modyfikacje. Przy zmianie oferty za kazdym razem trzeba zmienaic ta klase
+
+MyPizza_Good_SimpleFactory
+W celu zapewnienia elastycznosci projektowy oraz zgodnosci z 1 i 2 zasada solida wydzielimy kod tworzenia obiektu Pizzy do osobnej klasy ktora bedzie prosta fabryka
+
+MyPizza -> do tego nie ma kodu
+Pojedynczy lokal jaki mielismy rozrosl sie na caly swiat. Rozne lokale serwuja rozne rodzaje pizzy i czesto sa to unikaty nie wystepujace w innych regionach.
+1. Amerykanska pizzeria chce serwowac pizze na grubym ciescie z duza iloscia sera oraz sosow
+2. Wloska pizzeria chce serwowac pizze na cienkim ciescie z aromatycznym sosem i niewielka iloscia sera
+- Tworzymy wiec fabryke dla wloskiej oraz amerykanskiej pizzeri
+- Przekazujemy obiekt fabryki do PizzaService
+To rozwiazanie nie jest zbyt elastyczne, niektore pizzerie zmienyly sposob dzialania np przestaly kroic pizze albo zmienili producenta opakowan
+
+MyPizza_Good_FactoryMethod
+Zapewnianie roznym pizzeriom tworzenie regionalnych odmian pizzy.
+- ponownie dodajemy metode  Create() w klasie PizzaService ale tym razem jako metoda abstrakcyjna. Klase PizzaService tez zmieniamy na abstrakcyjna
+- dla kazdej regionalnej odmiany pizzy tworzymy klase podrzedna dla klasy PizzaService
+
+MyPizza_Good_AbstractFactory - fabryka ze skladnikami
+Problem - marka pizzeri odnosi wielkie sukcesy, ale niektorzy franczyzobiorcy aby zredukowac koszty uzywaja gorszych skladnikow na czym traci marka. W celu zapewnienia rownej
+		  jakosci skladnikow wybudujemy fabryke skladnikow i ta fabryka bedzie dostarczac te skladniki do pizzeri. Problem jednak polega na tym, ze pizzerie w roznych regionach
+		  inaczej definiuja niektore produkty np w wloskiej pizzy serowej jest inny typ sera niz w amerykanskiej itd 
+Rozwiazanie
+1. Tworzymy nowe klasy reprezetujace sos, ser, ciasto, warzywa itd
+2. Tworzymy interface IPizzaIngredientsFactory ktory bedzie zawieral metody zwracajace poszczegolne klasy reprezentujace skladniki (sos, ciasto itd)
+3. Tworzymy osobne fabryki dla kazdego regionu, ktore beda implementowac IPizzaIngredientsFactory
+4. Tworzymy szereg klas opisujacych poszczegolne skladniki wykorzystane przez fabryke np ser reggio, czerwona papryka, grube chrupkie ciasto.
+5. Polaczyc to wszystko z istniejacym kodem
