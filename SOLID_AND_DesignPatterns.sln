@@ -141,6 +141,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPizza_Good_FactoryMethod"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPizza_Good_AbstractFactory", "2. Design Patterns\1. Creational\Factory\Examples\1. MyPizza\Good\MyPizza_Good_AbstractFactory\MyPizza_Good_AbstractFactory.csproj", "{9830EE75-20C6-4A80-86CA-39973EB5FC14}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{797E1F3B-E2F2-4A45-9E0C-D5A1B7335685}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\1. Creational\Singleton\Definicja.txt = 2. Design Patterns\1. Creational\Singleton\Definicja.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{41FDB652-146F-4747-B307-D37E0C9BFD96}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\Problem.txt = 2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\Problem.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Chocolate Factory", "1. Chocolate Factory", "{03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Chocolate_BaseCode", "2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\1. Chocolate_BaseCode\1. Chocolate_BaseCode.csproj", "{4A139CED-9B62-4F93-ADC8-60CAB0204253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Chocolate_Singleton", "2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\2. Chocolate_Singleton\2. Chocolate_Singleton.csproj", "{EE553311-ED68-428E-8760-FFBAEAC68E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Chocolate_Singleton_Lock", "2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\3. Chocolate_Singleton_Lock\3. Chocolate_Singleton_Lock.csproj", "{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Chocolate_Singleton_2XLock", "2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\4. Chocolate_Singleton_2XLock\4. Chocolate_Singleton_2XLock.csproj", "{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Chocolate_Singleton_Lazzy", "2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\5. Chocolate_Singleton_Lazzy\5. Chocolate_Singleton_Lazzy.csproj", "{2CDC057A-6D95-4161-A673-81EDC06DB972}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +245,26 @@ Global
 		{9830EE75-20C6-4A80-86CA-39973EB5FC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9830EE75-20C6-4A80-86CA-39973EB5FC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9830EE75-20C6-4A80-86CA-39973EB5FC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A139CED-9B62-4F93-ADC8-60CAB0204253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A139CED-9B62-4F93-ADC8-60CAB0204253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A139CED-9B62-4F93-ADC8-60CAB0204253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A139CED-9B62-4F93-ADC8-60CAB0204253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE553311-ED68-428E-8760-FFBAEAC68E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE553311-ED68-428E-8760-FFBAEAC68E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE553311-ED68-428E-8760-FFBAEAC68E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE553311-ED68-428E-8760-FFBAEAC68E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -283,6 +325,14 @@ Global
 		{70862321-3D92-4008-AE8C-1FDEE50F1FCF} = {ED487D1D-F1AD-48E7-B181-30D173EA9162}
 		{18B6A30A-EF50-4B3C-89C5-795CC4ABA873} = {ED487D1D-F1AD-48E7-B181-30D173EA9162}
 		{9830EE75-20C6-4A80-86CA-39973EB5FC14} = {ED487D1D-F1AD-48E7-B181-30D173EA9162}
+		{797E1F3B-E2F2-4A45-9E0C-D5A1B7335685} = {332C86D4-D167-489D-851F-CC3F08AE739D}
+		{41FDB652-146F-4747-B307-D37E0C9BFD96} = {797E1F3B-E2F2-4A45-9E0C-D5A1B7335685}
+		{03503FE9-F068-4F9E-BC4A-4A2FB19DEE36} = {41FDB652-146F-4747-B307-D37E0C9BFD96}
+		{4A139CED-9B62-4F93-ADC8-60CAB0204253} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
+		{EE553311-ED68-428E-8760-FFBAEAC68E36} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
+		{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
+		{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
+		{2CDC057A-6D95-4161-A673-81EDC06DB972} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}

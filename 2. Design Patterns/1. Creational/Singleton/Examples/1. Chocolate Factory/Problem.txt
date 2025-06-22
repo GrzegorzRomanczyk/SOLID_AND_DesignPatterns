@@ -1,0 +1,32 @@
+1. Chocolate_BaseCode
+Mamy fabryke czekolady w ktorej znajduje sie kociol sterowany komputerem. Zadaniem kotla jest wymieszanie mleka z czekolada i 
+podgrzanie ich do odpowiedniej temperatury. Aktualny kod zostal zabezpieczony przed oproznieniem kotla przed wymieszaniem,
+przepelnieniem kotla czy tez podgrzewania pustego kotla.
+
+2. Chocolate_Singleton
+Wszystko dziala, kod jest zabezpieczony przed roznymi sytuacjami, ale wciaz mamy problem ze ktos utworzy dwa obiekty 
+ChocolateBoiler() przez co pozmienia aktualne stany zmiennych.
+Rozwiazanie - uzycie singletona, ktory nie zezwoli na utworzenie dwoch obiektow
+
+3. Chocolate_Singleton_Lock
+Do aplikacji zostala dodana wielowatkowosc, przez co rozne watki dostaly nowa instancje singletona. Spowodowalo to zmiane stanow
+kotla, a to sprawilo rozlanie czekolady zanim zostala podgrzana i wymieszana.
+Rozwiazanie - aby zapobiec takiej sytuacji zalozymy blokade watku metodzie pobierajaca instancje singletona.
+
+4. Chocolate_Singleton_2XLock
+Rozwiazanie z Lock zadziala prawidlowo, kazdy watek bedzie czekal az poprzedni skonczy operacje jednak to bywa kosztowne
+Rozwiazanie - uzyjemy podwojnego Lock
+- sprawdzamy czy obiekt zostal utworzony
+- blokujemy watek
+- sprawdzamy jeszcze raz czy zostal utworzony
+Plusy
+- gwarantuje ze tylko 1 watek zostanie stworzony
+- lepiej wydajne niz pojedynczy Lock bo jest sprawdzane tylko raz
+Minusy
+- moze byc skomplikowany
+- robi to samo co Lazzy a jest trudniejszy w implementacji
+
+5. Chocolate_Singleton_Lazzy
+Aby proscic dodajemy Lazy<ChocolateBoiler> instance = new Lazy<ChocolateBoiler>(() => new ChocolateBoiler()), 
+ktore jest zwracane w GetInstance(). Zapewnia to bezpieczenstwo watkow.
+Jezeli wiemy, ze singleton zawsze bedzie uzyty chociaz raz mozemy zamiast Lazzy od razu utworzyc nowy obiekt.

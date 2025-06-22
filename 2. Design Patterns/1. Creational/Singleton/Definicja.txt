@@ -1,0 +1,1 @@
+Singleton - zapewnia ze dana klasa bedzie miala tylko i wylacznie jedna instancje obiektu i gwarantuje globalny punkt dostepu do tej instancji.
