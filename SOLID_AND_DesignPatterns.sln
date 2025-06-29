@@ -163,6 +163,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Chocolate_Singleton_2XLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Chocolate_Singleton_Lazzy", "2. Design Patterns\1. Creational\Singleton\Examples\1. Chocolate Factory\5. Chocolate_Singleton_Lazzy\5. Chocolate_Singleton_Lazzy.csproj", "{2CDC057A-6D95-4161-A673-81EDC06DB972}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{57FE7129-75F8-45D6-92F1-1F99345EFF1A}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\2. Behavioral\Command\Definicja.txt = 2. Design Patterns\2. Behavioral\Command\Definicja.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{CD161B5F-CB3B-41E9-BF07-1DF220655791}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. SuperPilot", "1. SuperPilot", "{471F6A84-E400-4A7E-8976-480F1D8179C6}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\2. Behavioral\Command\Examples\1. SuperPilot\Problem.txt = 2. Design Patterns\2. Behavioral\Command\Examples\1. SuperPilot\Problem.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperPilot_Command", "2. Design Patterns\2. Behavioral\Command\Examples\1. SuperPilot\SuperPilot_Command\SuperPilot_Command.csproj", "{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperPilot_Command_2", "2. Design Patterns\2. Behavioral\Command\Examples\1. SuperPilot\SuperPilot_Command\SuperPilot_Command_2\SuperPilot_Command_2.csproj", "{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -265,6 +281,14 @@ Global
 		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CDC057A-6D95-4161-A673-81EDC06DB972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -333,6 +357,11 @@ Global
 		{AF4DF691-9F7C-4C8C-965D-C016D0DC24CC} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
 		{E7CF7BA2-8037-4D64-BA2E-4C0BA9809AA8} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
 		{2CDC057A-6D95-4161-A673-81EDC06DB972} = {03503FE9-F068-4F9E-BC4A-4A2FB19DEE36}
+		{57FE7129-75F8-45D6-92F1-1F99345EFF1A} = {F196E099-CA04-4353-8D69-6AA10BB1FA0A}
+		{CD161B5F-CB3B-41E9-BF07-1DF220655791} = {57FE7129-75F8-45D6-92F1-1F99345EFF1A}
+		{471F6A84-E400-4A7E-8976-480F1D8179C6} = {CD161B5F-CB3B-41E9-BF07-1DF220655791}
+		{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE} = {471F6A84-E400-4A7E-8976-480F1D8179C6}
+		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC} = {471F6A84-E400-4A7E-8976-480F1D8179C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}

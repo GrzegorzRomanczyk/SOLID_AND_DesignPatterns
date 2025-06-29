@@ -1,0 +1,27 @@
+SuperPilot_.BaseCode -> do tego nie ma kodu. Kod bazowy jest kodem ktory dostalismy od zewnetrzej firmy
+Mamy pilot do sterowania roznymi rzeczami. Mozna do niego przypiac 7 rzeczy. Kazda z tych zeczy moze zostac podmieniona.
+Kazda z tych rzeczy mozna wlaczyc, wylaczyc albo wycofac ostatnia operacje. Dostalismy kod od firmy zewnetrznej pozwalajacy 
+sterowac kilkoma urzadzeniami takimi jak telewizor, oswietlenie, spryskiwacz ogrodowy. Interejsy urzedzen znaczaco sie od siebie
+roznia, ponadto w przyszlosci moga dojsc dodatkowe urzadzienia.
+
+SuperPilot_Command
+Tworzenie API do pilota zaczynamy od wzorca Command
+1. Tworzymy interface ICommand, ktory ma jedna metode void Execute();
+2. Tworzymy klase urzadzenia na start klasa reprezentujaca swiatlo Light, ktora ma metode wlacz oraz wylacz
+3. Tworzymy klase polecenia dla swiatla, ktora implementuje ICommand oraz przyjmuje obiekt urzadzenia Light.
+   Implementujemy metode Execute() która wrapuje metode TurnOn() z klasy Light
+4. Testujemy rozwiazanie. Tworzymy klase MiniPilot. Dla uproszczenia zalozmy, ze obslugujemy 1 urzadzenie oraz mamy tylko jeden przycisk
+5. Dodajemy obsluge otwierania drzwi garazowych.
+6. Testujemy rozwiazanie ze zmiana slotu w gniezdzie
+
+SuperPilot_Command_2
+W tym projekcie przypisujemy urzadzeina do gniazd.. Do tych gniazd do ktorych nie przypiszemy uzyjemy null object.
+W ksiazce przykad byl troszke bardzoej rozbudowany w sposob taki ze urzadzenia przyjmowaly stringi z lokalizacja  gdzie 
+znajduje sie urzadzenie. Dla prostoty tego nie zrobilem
+Mamy 3 urzadzenia.
+- Swiatlo, drzwi garazowe oraz wieza stereo. Do kazdej z nich mamy osobne klasy z poleceniem i tak je testujemy.
+- Nastepnie testujemy te same urzadzenia bez klas polecen a z wyrazeniem lambda
+W C# jest problem aby uzyc lambdy jak w javie wiec nalezy stworzyc klase LambdaCommand() ktora przyjmuje akcje jako parametr 
+oraz implementuje ICommand. nastepnie przy uzyciu trzeba stworzyc nowy obiekt LambdaCommand() i przekazac mu metode/akcje.
+Rozwiazanie to pomaga zmniejszyc ilosc klas polecen, ale ma tez swoje wady bo np wieza stereo wywolywala wiecej polecen niz jedno,
+a w chwili obecnej wykona tylko jedno.

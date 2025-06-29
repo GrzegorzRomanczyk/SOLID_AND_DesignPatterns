@@ -1,0 +1,6 @@
+Wzorzec polecenie (command) - hermetyzuje zadania w postaci obiektow co umozliwiaparametryzowanie innych obiektow zroznicowanymi
+zadaniami (takimi jak np zadania kolejkowania lub rrejestracji oraz obslugiwanie operacji ktore mozna wycofac)
+
+Null Object - jest honorowym czlonkiem lozy wzorcow. Obiekt pusty jest przydatny w sytuacji kiedny nie jestesmy w stanie zwrocic 
+			  zadnego innego obiektu, a jednoczesnie nie chcesz skladac odpowiedzialnosci za obsluge wartosci null na klienta.
+			  Obiekt pusty jest czesto uzywany w polaczeniu ze wzorcami projektowymi.
