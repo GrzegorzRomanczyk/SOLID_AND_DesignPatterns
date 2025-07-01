@@ -1,0 +1,10 @@
+HomeCinema_BaseCode
+Mamy kino domowe ktore posiada wiele urzadzen takie jak projektor, maszyna do popcornu, oswietlenie itd.
+Problem polega na tym, ze za kazdym razem jak chcemy odpalic film musimy uruchomic wszystko osobno. tak samo z wylaczeniem.
+
+HomeCinema_Facade
+Korzystanie z takiego rozwiazania jest bardzo uciazliwe dlatego stworzymy fasade ktora uruchomi to wszystko w prosty sposob
+1 Tworzymy klase fasady
+2 Przekazujemy mu wszystkie niezbedne obiekty
+3 Tworzymy metody opakowujace zachowania do danej chwili
+4 Cieszymy sie z testu gdzie aby wylaczyc lub wlaczyc TV/radio uzywamy jednej metody

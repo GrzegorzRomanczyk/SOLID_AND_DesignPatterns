@@ -1,0 +1,18 @@
+DuckAdapter
+Mamy uproszczony program kaczek w ktorym kaczka potrafi kwakac i latac. Chcemy sprawic aby w tym kodzie mozna bylo uzywac
+zamiast kaczki indyka bez zmiany istniejacego kodu. W tym celu uzyjemy adaptera, ktory bedzie "przebieral" indyka w kaczke :D
+Kaczka
+- lata
+- kwacze
+Indyk
+- lata ale zdecydowanie krocej niz kaczka
+- gulgocze
+
+Rozwiazanie
+1. Tworzymy interface kaczki oraz indyka
+2. Tworzymi klase kaczki krzyzowki oraz dzikiego indyka (implementuja interface swojego gatunku)
+3. Tworzymy TurkeyAdapter, ktory implementuje interface kaczki
+4. W zaimplementowanych metodach wywolujemy zachowania indyka nadpisujac mu latanie w taki sposob ze w jednym przelocie kaczki
+   indyk poleci 5 razy.
+5. Testujemy rozwiazanie w klasie Program
+6. Moza tez zrobic adapter w druga strone ze kaczka udaje indyka

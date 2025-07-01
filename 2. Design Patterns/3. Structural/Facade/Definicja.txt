@@ -1,0 +1,2 @@
+Fasada - zapewnia jeden, zunfikowany interfejs dla calego zestawu interfejsow okreslonego podsystemu.
+		 Fasada tworzy nowy interfejs wyzszego poziomu, ktory powoduje, ze korzystanie z calego podsystemu staje sie latwiejsze

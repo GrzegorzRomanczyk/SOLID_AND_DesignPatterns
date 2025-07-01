@@ -1,0 +1,2 @@
+Adapter - dokonuje konwersji interfejsu danej klasy na inny interfejs, zgodny z oczekiwaniami klienta. Adapter Pozwala na wzajemn¹
+	      wspolprace klas, ktore ze wzgledu na niekompatybilne interfejsy wczesniej nie mogly ze soba wspolpracowac.

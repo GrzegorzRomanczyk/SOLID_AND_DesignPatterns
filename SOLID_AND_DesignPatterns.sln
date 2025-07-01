@@ -179,6 +179,36 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperPilot_Command", "2. De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperPilot_Command_2", "2. Design Patterns\2. Behavioral\Command\Examples\1. SuperPilot\SuperPilot_Command\SuperPilot_Command_2\SuperPilot_Command_2.csproj", "{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{5618778D-CFA3-40D1-8641-49FCD382756D}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\3. Structural\Adapter\Definicja.txt = 2. Design Patterns\3. Structural\Adapter\Definicja.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{3C533BEC-797A-4A76-90E1-3939658F7A76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. DuckAdapter", "1. DuckAdapter", "{C5E30CBF-2031-4CDD-992F-2853B8884395}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\3. Structural\Adapter\Examples\1. DuckAdapter\Problem.txt = 2. Design Patterns\3. Structural\Adapter\Examples\1. DuckAdapter\Problem.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckAdapter", "2. Design Patterns\3. Structural\Adapter\Examples\1. DuckAdapter\DuckAdapter\DuckAdapter.csproj", "{AADA0A2C-4B8F-48BA-9FC5-2C0C268D876F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{52E4DDE1-30CA-492C-9CD8-C986DC8A3661}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\3. Structural\Facade\Definicja.txt = 2. Design Patterns\3. Structural\Facade\Definicja.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{1D5E2E03-8700-4B0E-A624-76803DE1C232}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Home Cinema", "1. Home Cinema", "{FC6EB851-8E4B-4F79-8064-8EFC24B82BBE}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\3. Structural\Facade\Examples\Problem.txt = 2. Design Patterns\3. Structural\Facade\Examples\Problem.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCinema_BaseCode", "2. Design Patterns\3. Structural\Facade\Examples\1. Home Cinema\HomeCinema_BaseCode\HomeCinema_BaseCode.csproj", "{823B4646-103F-47FA-9A84-C5DBFB661732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCinema_Facade", "2. Design Patterns\3. Structural\Facade\Examples\1. Home Cinema\HomeCinema_Facade\HomeCinema_Facade.csproj", "{EEDFEC29-81B1-4FAD-9CBE-28923B6EC6D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -289,6 +319,18 @@ Global
 		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AADA0A2C-4B8F-48BA-9FC5-2C0C268D876F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADA0A2C-4B8F-48BA-9FC5-2C0C268D876F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADA0A2C-4B8F-48BA-9FC5-2C0C268D876F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADA0A2C-4B8F-48BA-9FC5-2C0C268D876F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{823B4646-103F-47FA-9A84-C5DBFB661732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{823B4646-103F-47FA-9A84-C5DBFB661732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{823B4646-103F-47FA-9A84-C5DBFB661732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{823B4646-103F-47FA-9A84-C5DBFB661732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDFEC29-81B1-4FAD-9CBE-28923B6EC6D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDFEC29-81B1-4FAD-9CBE-28923B6EC6D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDFEC29-81B1-4FAD-9CBE-28923B6EC6D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDFEC29-81B1-4FAD-9CBE-28923B6EC6D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -362,6 +404,15 @@ Global
 		{471F6A84-E400-4A7E-8976-480F1D8179C6} = {CD161B5F-CB3B-41E9-BF07-1DF220655791}
 		{2932EEEA-216B-4E7E-8EC4-7E0530EB74EE} = {471F6A84-E400-4A7E-8976-480F1D8179C6}
 		{C7A1BDD0-67E2-410D-8EB5-0D959C5738CC} = {471F6A84-E400-4A7E-8976-480F1D8179C6}
+		{5618778D-CFA3-40D1-8641-49FCD382756D} = {12E56812-06A2-42B8-B166-2690945F9548}
+		{3C533BEC-797A-4A76-90E1-3939658F7A76} = {5618778D-CFA3-40D1-8641-49FCD382756D}
+		{C5E30CBF-2031-4CDD-992F-2853B8884395} = {3C533BEC-797A-4A76-90E1-3939658F7A76}
+		{AADA0A2C-4B8F-48BA-9FC5-2C0C268D876F} = {C5E30CBF-2031-4CDD-992F-2853B8884395}
+		{52E4DDE1-30CA-492C-9CD8-C986DC8A3661} = {12E56812-06A2-42B8-B166-2690945F9548}
+		{1D5E2E03-8700-4B0E-A624-76803DE1C232} = {52E4DDE1-30CA-492C-9CD8-C986DC8A3661}
+		{FC6EB851-8E4B-4F79-8064-8EFC24B82BBE} = {1D5E2E03-8700-4B0E-A624-76803DE1C232}
+		{823B4646-103F-47FA-9A84-C5DBFB661732} = {FC6EB851-8E4B-4F79-8064-8EFC24B82BBE}
+		{EEDFEC29-81B1-4FAD-9CBE-28923B6EC6D6} = {FC6EB851-8E4B-4F79-8064-8EFC24B82BBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}
