@@ -1,0 +1,6 @@
+Metoda szablonowa - definiuje szkielet danego algorytmu w okreslonej metodzie, przekazujac realizacje niektorych krokow do klas podrzednych.
+					Wzorzec ten pozwala klasom podrzednym na redefiniowanie pewnych krokow algorytmu, ale jednoczesnie uniemozliwiajac
+					zmiane jego struktury.
+
+Metoda szablonowa z haczykiem - „Haczyk” to metoda domyœlnie pusta (lub z podstawow¹ logik¹) w klasie bazowej. 
+								Daje podklasom mo¿liwoœæ dostosowania zachowania bez koniecznoœci nadpisywania jej.

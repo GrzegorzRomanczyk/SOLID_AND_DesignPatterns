@@ -1,0 +1,22 @@
+Cafe Recipes
+Mamy program ktory przechowuje receptury wytworzenia kawy oraz herbaty.
+Kawa
+- zagrzej wode
+- zalej kawe
+- nalej do filizanki
+- dodaj cukier i mleko
+Herbata
+- zagrzej wode
+- wloz torebke do wrzatku
+- najel do filizanki
+- dodaj cytryne
+Implementacja mogla by wygladac tak ze mamy osobna klase kawy i herbaty i kazda klassa robi to co musi, ale tu powtarza sie kod.
+- zagrzej wode oraz nalej do filizanki to dokladnie te same metody.
+
+CafeRecipesTemplateMethod
+Przechodzimy od razu do implementacji wzorca
+
+CafeRecipesTemplateMethodHook
+Nie kazdy klient chce dodatki wiec tworzymy metode szablonowa z haczykiem 
+- dodajemy ifa do metody dodajacej dodatki
+- nastepnie w klasach napojow implementujemy metode zwracajaca odpowiedz od uzytkownika.
