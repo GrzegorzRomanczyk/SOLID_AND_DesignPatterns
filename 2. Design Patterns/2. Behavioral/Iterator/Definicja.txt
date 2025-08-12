@@ -1,0 +1,1 @@
+Wzorzec Iterator - zapewnia metode dostepu sekwencyjnego do elementow obiektu zagregowanego bez ujawnienia jego reprezentacji wewnetrznej.

@@ -225,6 +225,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeRecipesTemplateMethod",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeRecipesTemplateMethodHook", "2. Design Patterns\2. Behavioral\Template method\Examples\1. Cafe Recipes\CafeRecipesTemplateMethodHook\CafeRecipesTemplateMethodHook.csproj", "{DACD03D7-768F-4C4A-B245-E2AA42B20084}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iterator", "Iterator", "{FBC11AB0-FBFC-495B-857E-E39A753EA187}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\2. Behavioral\Iterator\Definicja.txt = 2. Design Patterns\2. Behavioral\Iterator\Definicja.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{0C26BFF5-9CE1-4604-93B9-C448E322B78F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. MenuFusion", "1. MenuFusion", "{25BCC527-6887-4BFC-9E0C-2CC0D6D51775}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\2. Behavioral\Iterator\Examples\Problem.txt = 2. Design Patterns\2. Behavioral\Iterator\Examples\Problem.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFusion_BaseCode", "2. Design Patterns\2. Behavioral\Iterator\Examples\1. MenuFusion\MenuFusion_BaseCode\MenuFusion_BaseCode.csproj", "{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFusion_Iterator", "2. Design Patterns\2. Behavioral\Iterator\Examples\1. MenuFusion\MenuFusion_Iterator\MenuFusion_Iterator.csproj", "{FAC603C2-5616-417E-A40C-65D56804AD92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -355,6 +371,14 @@ Global
 		{DACD03D7-768F-4C4A-B245-E2AA42B20084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DACD03D7-768F-4C4A-B245-E2AA42B20084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DACD03D7-768F-4C4A-B245-E2AA42B20084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC603C2-5616-417E-A40C-65D56804AD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC603C2-5616-417E-A40C-65D56804AD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC603C2-5616-417E-A40C-65D56804AD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC603C2-5616-417E-A40C-65D56804AD92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -442,6 +466,11 @@ Global
 		{F6285B79-90CD-4FD1-A6C6-AB36E2733B5A} = {9EA6A1F2-06F0-41F9-B86F-A2E6A6ACAF2C}
 		{8AE1EEF8-DD1B-4B6F-B7D6-9F25B3E91CC5} = {F6285B79-90CD-4FD1-A6C6-AB36E2733B5A}
 		{DACD03D7-768F-4C4A-B245-E2AA42B20084} = {F6285B79-90CD-4FD1-A6C6-AB36E2733B5A}
+		{FBC11AB0-FBFC-495B-857E-E39A753EA187} = {F196E099-CA04-4353-8D69-6AA10BB1FA0A}
+		{0C26BFF5-9CE1-4604-93B9-C448E322B78F} = {FBC11AB0-FBFC-495B-857E-E39A753EA187}
+		{25BCC527-6887-4BFC-9E0C-2CC0D6D51775} = {0C26BFF5-9CE1-4604-93B9-C448E322B78F}
+		{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320} = {25BCC527-6887-4BFC-9E0C-2CC0D6D51775}
+		{FAC603C2-5616-417E-A40C-65D56804AD92} = {25BCC527-6887-4BFC-9E0C-2CC0D6D51775}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}

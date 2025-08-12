@@ -1,0 +1,27 @@
+MenuFusion_Base
+Mamy dwie restauracje, ktore postanowily polaczyc sie w jedna. Restauracja nalesnikow bedzie serwowac sniadania, a restauracja
+obiadowo bedzie serwowac obiady.
+Menu obu restauracji sklada sie z 4 informacji
+- nazwa
+- opis
+- czy jest wegetarianska
+- cena
+Problem polega na tym ze obie restauracje przechowuja swoje dane w innych kolekcjach. Nalesniki w ArrayList a Obiadowo w Array.
+Na koncu jest stworzona kelnerka ktora musi posiadac metody odpowiedzialne za:
+- wyswietlenie calego menu
+- wyswietlenie menu sniadan
+- wyswietlenie menu obiadow
+- wyswietlenie potraw wege
+- sprawdzenie czy dana pozycja jest wege
+Przez to ze mamy dwa rozne typy zwracane to
+- piszemy kod pod katem konkretnych implementacji obiektow menu a nie interface
+- klasa kelnerki musi znac reprezentacje wewnetrznej kolekcjo dla kazdego menu co burzy zasade hermetyzacji
+- musimy powtorzyc fragment kodu, metoda DisplayMenu() wymaga dwoch niezaleznych petli, aby przetworzyc zawartosc dwoch roznych menu.
+
+MenuFusion_Iterator
+Aby rozwiazac problemy z porzedniego przykladu uzyjemy wzorca Iterator.
+Tworzymy interface Iterator
+Tworzymy klase dla obiadow ktora implementuje iterator
+Modyfikujemy klase LunchMenu
+Nastepnie powtarzamy kroki dla sniadan
+Modyfikujemy klase order service
