@@ -1,0 +1,20 @@
+
+Mamy automat do sprzedazy produktow. Automad posiada kilka stanow. Stanem bazowym jest stan BRAK MONETY. Po wrzuceniu monety przechodzimy w stan
+JEST MONETA. Z tego stanu mozemy wykonac dwie operacje:
+- zwrocenie monety powraca do stanu BRAK MONETY
+- przekrecenie galki przechodzi do stanu GUMA SPRZEDANA
+Z tego stanu przechodzimy do stanu BRAK MONETY ale sprawdzamy tez czy w automacie nadal jest produkt.
+Jezeli go nie ma to zamiast do BRAK MONETY przechodzimy do BRAK PRODUKTU
+
+2. VendingMachine_State
+ W obecnej chwili rozbudowa jest bardzo trudna poniewaz
+- kod nie spelnia zasady open close
+- nie mamy hermetyzacji zachowan podlegajacych zmianom
+- kod nie jest obiektowy
+W celu usprawnienia kodu zaimplementujemy wzorzec Stan
+- definicja interfejsu, ktory bedzie zawieral operacje zwiazane z automatem
+- implementacja klas reprezentujacych stany automatu, kazda z nich bedzie odpowiedzialna zadzialanie automatu w pewnym stanie
+- usuniecie instrukcji warunkowych i wrowadzenie delegacji do klas reprezentujacych stan
+
+3.VendingMachine_StateWithBonus
+Rozbudowa automatu zaklada ze w 10% przypadkow automat wyda 2 gumy a nie jedna.

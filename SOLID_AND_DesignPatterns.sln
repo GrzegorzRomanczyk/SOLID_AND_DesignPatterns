@@ -241,6 +241,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFusion_BaseCode", "2. D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFusion_Iterator", "2. Design Patterns\2. Behavioral\Iterator\Examples\1. MenuFusion\MenuFusion_Iterator\MenuFusion_Iterator.csproj", "{FAC603C2-5616-417E-A40C-65D56804AD92}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{D722E014-D19E-4E82-A7B6-72F0A48A5EDA}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\2. Behavioral\State\Definicja.txt = 2. Design Patterns\2. Behavioral\State\Definicja.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{49F7E51E-9274-4C0C-A7CE-54A181FEAAF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. VendingMachine", "1. VendingMachine", "{D2B1C474-24D6-4F70-BB16-AA0652673056}"
+	ProjectSection(SolutionItems) = preProject
+		2. Design Patterns\2. Behavioral\State\Examples\Problem.txt = 2. Design Patterns\2. Behavioral\State\Examples\Problem.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine", "2. Design Patterns\2. Behavioral\State\Examples\1. VendingMachine\VendingMachine\VendingMachine.csproj", "{3AEA9F46-C0D6-4C46-B0A7-1A16C1BDF872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine_State", "2. Design Patterns\2. Behavioral\State\Examples\1. VendingMachine\VendingMachine_State\VendingMachine_State.csproj", "{BF3AC307-2922-403C-8A08-F899B228A6D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine_StateWithBonus", "2. Design Patterns\2. Behavioral\State\Examples\1. VendingMachine\VendingMachine_StateWithBonus\VendingMachine_StateWithBonus.csproj", "{4A43EFF2-96E2-41DE-8AD6-D20E40E51D8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -379,6 +397,18 @@ Global
 		{FAC603C2-5616-417E-A40C-65D56804AD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAC603C2-5616-417E-A40C-65D56804AD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAC603C2-5616-417E-A40C-65D56804AD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEA9F46-C0D6-4C46-B0A7-1A16C1BDF872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEA9F46-C0D6-4C46-B0A7-1A16C1BDF872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEA9F46-C0D6-4C46-B0A7-1A16C1BDF872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEA9F46-C0D6-4C46-B0A7-1A16C1BDF872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3AC307-2922-403C-8A08-F899B228A6D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3AC307-2922-403C-8A08-F899B228A6D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3AC307-2922-403C-8A08-F899B228A6D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3AC307-2922-403C-8A08-F899B228A6D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A43EFF2-96E2-41DE-8AD6-D20E40E51D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A43EFF2-96E2-41DE-8AD6-D20E40E51D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A43EFF2-96E2-41DE-8AD6-D20E40E51D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A43EFF2-96E2-41DE-8AD6-D20E40E51D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -471,6 +501,12 @@ Global
 		{25BCC527-6887-4BFC-9E0C-2CC0D6D51775} = {0C26BFF5-9CE1-4604-93B9-C448E322B78F}
 		{3B4F1E7E-5899-4CD4-9E7A-C0F075FAE320} = {25BCC527-6887-4BFC-9E0C-2CC0D6D51775}
 		{FAC603C2-5616-417E-A40C-65D56804AD92} = {25BCC527-6887-4BFC-9E0C-2CC0D6D51775}
+		{D722E014-D19E-4E82-A7B6-72F0A48A5EDA} = {F196E099-CA04-4353-8D69-6AA10BB1FA0A}
+		{49F7E51E-9274-4C0C-A7CE-54A181FEAAF9} = {D722E014-D19E-4E82-A7B6-72F0A48A5EDA}
+		{D2B1C474-24D6-4F70-BB16-AA0652673056} = {49F7E51E-9274-4C0C-A7CE-54A181FEAAF9}
+		{3AEA9F46-C0D6-4C46-B0A7-1A16C1BDF872} = {D2B1C474-24D6-4F70-BB16-AA0652673056}
+		{BF3AC307-2922-403C-8A08-F899B228A6D6} = {D2B1C474-24D6-4F70-BB16-AA0652673056}
+		{4A43EFF2-96E2-41DE-8AD6-D20E40E51D8A} = {D2B1C474-24D6-4F70-BB16-AA0652673056}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11184AF-F382-4185-9B51-34ED1D6F70E5}

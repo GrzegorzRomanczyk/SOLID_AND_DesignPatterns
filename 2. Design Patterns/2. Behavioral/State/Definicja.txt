@@ -1,0 +1,1 @@
+Wzorzec State - umozliwia obiektowi modyfikacje zachowania ze zmiana jego wewnetrznego stanu. Uzyskujemy w ten sposob zludzenie zmiany klasy tego obiektu
