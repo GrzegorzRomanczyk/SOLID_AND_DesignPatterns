@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VendingMachine_StateWithBonus
+namespace Monitor_Base.VendingMachineStateCode
 {
     public class VendingMachineService
     {
@@ -13,6 +13,8 @@ namespace VendingMachine_StateWithBonus
         public IState WithCoin { get; }
         public IState Sold { get; }
         public IState BonusProduct { get; }
+        public string Location { get; }
+
         private IState currentState;
         private int productCounter = 0;
 
@@ -21,14 +23,16 @@ namespace VendingMachine_StateWithBonus
             return $"\nAutomat do sprzedaży produktów.\nZapas produktów: {productCounter}.\nObecny stan {currentState}\n";
         }
 
+        public IState GetState() => currentState;
 
-        public VendingMachineService(int productCounter)
+        public VendingMachineService(string location, int productCounter)
         {
             Empty = new EmptyState(this);
             NoCoin = new NoCoinState(this);
             WithCoin = new WithCointState(this);
             Sold = new Sold(this);
             BonusProduct = new BonusProductState(this);
+            Location = location;
             this.productCounter = productCounter;
             if (productCounter > 0)
             {
@@ -69,7 +73,6 @@ namespace VendingMachine_StateWithBonus
                 productCounter -= 1;
             }
         }
-
         public int GetCounter()
         {
             return productCounter;

@@ -1,0 +1,6 @@
+B³¹d w ksiazce -> tutaj zajmujemy sie wzorcem Proxy a nie Mediator
+
+Monitor_Base
+Mamy automat sprzedajacy (przyklad ze wzorca stan). Wlasciciel automatu chce otrzymywac raport stanu o urzadzeniu i jego zaopatrzeniu
+
+Monitor nie zostal dokonczony ze wzgledu na wbudowany w jave system RMI - Remote Method Invocation. w C# trzeba uzyc gRPC/WCF/WebAPI

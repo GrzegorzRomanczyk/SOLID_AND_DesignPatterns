@@ -1,0 +1,6 @@
+Wzorzec Proxy - prowadzi do obiektu posredniczacego, ktory kontroluje dostep do innego obiektu. Jest kilka rodzajow Proxy
+- zdalny - wywoluje metody obiektu zdalnego. Wynik jest zwracany poprzez siec i Proxy do klienta
+- wirtualny - przedstawiciel obiektu, ktorego utworzenie moze byc kosztowne. Pozwala to opoznic utworzenie tego obiektu do momentu, gdy staje sie on faktycznie niezbedny.
+			  Proxy zastepuje wlasciwy obiekt przed utworzeniem egzemplarza i w trakcie jego tworzenia, nastepnie deleguje zadania bezposrednio do obiektu Prawdziwego
+- chroniacy kontrole dostepu
+				
